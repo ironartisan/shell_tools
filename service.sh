@@ -1,7 +1,7 @@
 #!/bin/sh
 # set -x
 ###################################
-#该脚本为Linux下启动java或python程序的通用脚本。即可以作为开机自启动service脚本被调用，
+#该脚本为Linux下启动java、python、bash程序的通用脚本。即可以作为开机自启动service脚本被调用，
 #也可以作为启动程序的独立脚本来使用。
 #
 #Author: ironartisan, Date: 2020/12/9
@@ -17,19 +17,27 @@
 #需要根据实际环境以及Java程序名称来修改这些参数
 ###################################
 #Java执行文件路径
-JAVA="/usr/bin/java"
+JAVA_PATH="/usr/bin/java"
 
 #Java参数
 JAVA_OPTS=" -jar"
 
 #Python执行文件路径
-PYTHON="python"
+PYTHON_PATH="python"
 
 #Python执行参数
 PYTHON_OPTS=""
 
+#Python执行文件路径
+BASH_PATH="/usr/bin/sh"
+
+#Python执行参数
+BASH_OPTS=""
+
 #执行的程序类型
-EXEC_PREFIX="$JAVA $JAVA_OPTS"
+EXEC_PREFIX="$JAVA_PATH $JAVA_OPTS"
+# EXEC_PREFIX="PYTHON_PATH PYTHON_OPTS"
+# EXEC_PREFIX="BASH_PATH BASH_OPTS"
 
 #可执行文件的版本号
 VERSION="0.8.4"
