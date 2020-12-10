@@ -14,7 +14,7 @@
 
 ###################################
 #环境变量及程序执行参数
-#需要根据实际环境以及Java程序名称来修改这些参数
+#需要根据实际环境以及程序名称来修改这些参数
 ###################################
 #Java执行文件路径
 JAVA_PATH="/usr/bin/java"
@@ -28,10 +28,10 @@ PYTHON_PATH="python"
 #Python执行参数
 PYTHON_OPTS=""
 
-#Python执行文件路径
+#Bash执行文件路径
 BASH_PATH="/usr/bin/sh"
 
-#Python执行参数
+#Bash执行参数
 BASH_OPTS=""
 
 #执行的程序类型
